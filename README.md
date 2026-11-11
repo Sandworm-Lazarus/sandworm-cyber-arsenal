@@ -10,6 +10,15 @@ A focused security collection covering AppSec, agent and MCP security, reverse e
 
 [ภาษาไทย](README.th.md) · [Skills](CATALOG.md) · [Tools](TOOLS.md) · [Start here](docs/start-here.md) · [Sources](SOURCES.md) · [Collection hub](https://github.com/Sandworm-Lazarus/sandworm-arsenal)
 
+## Original tool: Detection Lab
+
+Authored implementation, documented inputs and synthetic regression fixtures. [Guide](docs/original-tool.md) · [Original work](ORIGINAL_WORK.md).
+
+```bash
+python3 scripts/detection_lab.py --input examples/events.json --expect examples/expected-alerts.json
+python3 -m unittest discover -s tests -v
+```
+
 ## What is inside
 
 | Track | Entries |

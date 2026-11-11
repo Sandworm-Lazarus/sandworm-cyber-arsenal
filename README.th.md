@@ -10,6 +10,15 @@
 
 คลังนี้มีสกิล 68 entries และเครื่องมือ 19 ตัว พร้อมลิงก์ที่ตรึง commit และคำอธิบายการใช้งาน อ่าน [เส้นทางเริ่มต้น](docs/start-here.md) เพื่อเลือกตามโจทย์
 
+## เครื่องมือที่พัฒนาเอง: Detection Lab
+
+ตรวจพฤติกรรมซ้ำจาก event จำลอง พร้อมเทียบ expected alerts [Guide](docs/original-tool.md) · [Original work](ORIGINAL_WORK.md).
+
+```bash
+python3 scripts/detection_lab.py --input examples/events.json --expect examples/expected-alerts.json
+python3 -m unittest discover -s tests -v
+```
+
 ## ค้นหาและตรวจข้อมูล
 
 ใช้ Python 3.9+ โดยไม่ต้องติดตั้ง dependencies เพิ่ม
