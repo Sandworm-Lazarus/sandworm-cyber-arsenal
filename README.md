@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Cyber Arsenal" width="100%"></p>
 
-<p align="center"><b>68 skill entries · 17 tools · 32 source repositories</b></p>
+<p align="center"><b>68 skill entries · 19 tools · 34 source repositories</b></p>
 
 # Sandworm Cyber Arsenal
 
@@ -27,6 +27,8 @@ A focused security collection covering AppSec, agent and MCP security, reverse e
 | Supply chain | 4 |
 | CI security | 1 |
 | Code analysis | 2 |
+| MCP development | 1 |
+| Privacy & data handling | 1 |
 
 ## Use the collection
 

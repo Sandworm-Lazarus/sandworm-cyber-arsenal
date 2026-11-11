@@ -40,6 +40,13 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [zizmor](https://github.com/zizmorcore/zizmor/tree/33ece2d3d6c60f3d669b8a69e095f60d8a980c0b) | ตรวจ CI/CD config รวม GitHub Actions และ permission risks | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [checkov](https://github.com/bridgecrewio/checkov/tree/c7f1a45fac5712d4cbaef22946109e20a41a1cef) | ตรวจ IaC, container และ dependency configuration ก่อน deploy | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
+## Inspect MCP and privacy
+
+| Project | ใช้ทำอะไร | Evidence to collect |
+| --- | --- | --- |
+| [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [Presidio](https://github.com/data-privacy-stack/presidio/tree/1d7005932261a4b676e045d16fa2965dbc4b4ba2) | ค้นและ de-identify ข้อมูล PII ใน text/images ก่อนนำไปใช้ต่อ | Version, configuration, one task result, failure behavior and data/permission boundaries |
+
 ## Skill starting points
 
 | Entry | Task | Review |
@@ -53,3 +60,8 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [analyzing-binaries](https://github.com/trilwu/secskills/blob/ca53957bcd8e3b83b5d4d190bb3ad008a4f15c84/secskills-core/skills/analyzing-binaries/SKILL.md) | วิเคราะห์ executable โดยเริ่ม triage ก่อนเลือกจุด decompile | entry-reviewed |
 | [reversing-network-protocols](https://github.com/trilwu/secskills/blob/ca53957bcd8e3b83b5d4d190bb3ad008a4f15c84/secskills-core/skills/reversing-network-protocols/SKILL.md) | เทียบ packet capture กับ client เพื่อกู้ framing และ field ของ protocol | entry-reviewed |
 | [analyzing-memory-images](https://github.com/trilwu/secskills/blob/ca53957bcd8e3b83b5d4d190bb3ad008a4f15c84/secskills-defense/skills/analyzing-memory-images/SKILL.md) | วิเคราะห์ RAM dump เพื่อเรียงหลักฐาน process, network และ injection | entry-reviewed |
+
+## Synthetic privacy trial
+
+Use the original [privacy policy fixtures](../examples/privacy-fixtures.json) to define expected masking behavior in a prototype. Include Thai text, explicit sensitive fields, benign version numbers, already masked values and empty input. These are proposed acceptance criteria; configure your own adapter and recognizers and record observed results before claiming support.
+

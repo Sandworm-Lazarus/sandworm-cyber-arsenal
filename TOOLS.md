@@ -4,7 +4,7 @@
 
 These are executable tools and frameworks, counted separately from agent skills. Their README/source overviews were inspected; this repository has not installed or run them. Links point to the recorded revision.
 
-**17 tools and frameworks in 7 groups.** See [start here](docs/start-here.md) for task-oriented selections.
+**19 tools and frameworks in 9 groups.** See [start here](docs/start-here.md) for task-oriented selections.
 
 | Group | Tools |
 | --- | ---: |
@@ -15,6 +15,8 @@ These are executable tools and frameworks, counted separately from agent skills.
 | [Supply chain](#supply-chain) | 4 |
 | [CI security](#ci-security) | 1 |
 | [Code analysis](#code-analysis) | 2 |
+| [MCP development](#mcp-development) | 1 |
+| [Privacy & data handling](#privacy-data-handling) | 1 |
 
 <a id="skill-review"></a>
 
@@ -81,3 +83,19 @@ These are executable tools and frameworks, counted separately from agent skills.
 | --- | --- | --- |
 | [codeql](https://github.com/github/codeql/tree/ccc03491fc436578bfeecb7e75305d4d64e02118) | ใช้ query libraries และ checks สำหรับ semantic security analysis | CodeQL CLI/database และ toolchain ตามภาษา. MIT ใน repo นี้ครอบคลุม queries/libraries; CLI มีเงื่อนไขแยก |
 | [semgrep](https://github.com/semgrep/semgrep/tree/06d9993409f6698f78f6956cd39d968e7f4d7b6a) | ค้น pattern และ taint flows ด้วย static analysis | CLI และ rulesets ตาม engine/edition. Engine, rules และ Pro features ใช้เงื่อนไขต่างกัน; ตรวจ license และ telemetry |
+
+<a id="mcp-development"></a>
+
+## MCP development
+
+| Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
+| --- | --- | --- |
+| [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Node runtime ตาม engine ของ revision, MCP server/config และ connection credentials. เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
+
+<a id="privacy-data-handling"></a>
+
+## Privacy & data handling
+
+| Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
+| --- | --- | --- |
+| [Presidio](https://github.com/data-privacy-stack/presidio/tree/1d7005932261a4b676e045d16fa2965dbc4b4ba2) | ค้นและ de-identify ข้อมูล PII ใน text/images ก่อนนำไปใช้ต่อ | Python, NLP/recognizer dependencies และ anonymization policy ตามข้อมูล. ใช้ canonical community repository; ทดสอบข้อมูลภาษาไทยและ false negatives จริง การตรวจอัตโนมัติไม่รับรองว่าพบ PII ครบ |

@@ -1,7 +1,7 @@
 {
   "as_of": "2026-11-11",
   "timezone": "Asia/Bangkok",
-  "scope": "Focused collection: 68 skill entries and 17 tools. Original review levels retained. No upstream runtime testing.",
+  "scope": "Focused collection: 68 skill entries and 19 tools. Original review levels retained. No upstream runtime testing.",
   "sources": [
     {
       "repo": "trailofbits/skills",
@@ -543,6 +543,38 @@
       "category": "Containers / IaC",
       "recommendation": "เครื่องมือประกอบ",
       "note": "ตรวจการเรียก API, external modules และ cloud features ตามโหมด"
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "commit": "4d3464cb3a6dde609d7b5ac24c440b947eb40f23",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/LICENSE",
+      "license_blob_sha": "4a93985763241755401a10678395303de4e720ba",
+      "readme_url": "https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/README.md",
+      "readme_blob_sha": "7f5c529411172c33889e678496ed8bb1463c1a3a",
+      "license": "Apache-2.0 transition; retained MIT contributions; docs CC-BY-4.0",
+      "category": "MCP development",
+      "note": "เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS",
+      "recommendation": "README/license overview; not runtime-tested"
+    },
+    {
+      "repo": "data-privacy-stack/presidio",
+      "url": "https://github.com/data-privacy-stack/presidio",
+      "commit": "1d7005932261a4b676e045d16fa2965dbc4b4ba2",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license_url": "https://github.com/data-privacy-stack/presidio/blob/1d7005932261a4b676e045d16fa2965dbc4b4ba2/LICENSE",
+      "license_blob_sha": "9afc65b563ea7064fb04f68e3bbe31a15080f666",
+      "readme_url": "https://github.com/data-privacy-stack/presidio/blob/1d7005932261a4b676e045d16fa2965dbc4b4ba2/README.MD",
+      "readme_blob_sha": "a877d23deed3d2245b8b4afda308deeb10f5b534",
+      "license": "MIT",
+      "category": "Privacy & data handling",
+      "note": "ใช้ canonical community repository; ทดสอบข้อมูลภาษาไทยและ false negatives จริง การตรวจอัตโนมัติไม่รับรองว่าพบ PII ครบ",
+      "recommendation": "README/license overview; not runtime-tested"
     }
   ],
   "skills": [
@@ -2187,12 +2219,36 @@
       "url": "https://github.com/bridgecrewio/checkov/tree/c7f1a45fac5712d4cbaef22946109e20a41a1cef",
       "runtime_tested": false,
       "review_level": "readme-overview"
+    },
+    {
+      "repo": "modelcontextprotocol/inspector",
+      "name": "MCP Inspector",
+      "group": "MCP development",
+      "purpose": "ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface",
+      "requires": "Node runtime ตาม engine ของ revision, MCP server/config และ connection credentials",
+      "note": "เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS",
+      "url": "https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "data-privacy-stack/presidio",
+      "name": "Presidio",
+      "group": "Privacy & data handling",
+      "purpose": "ค้นและ de-identify ข้อมูล PII ใน text/images ก่อนนำไปใช้ต่อ",
+      "requires": "Python, NLP/recognizer dependencies และ anonymization policy ตามข้อมูล",
+      "note": "ใช้ canonical community repository; ทดสอบข้อมูลภาษาไทยและ false negatives จริง การตรวจอัตโนมัติไม่รับรองว่าพบ PII ครบ",
+      "url": "https://github.com/data-privacy-stack/presidio/tree/1d7005932261a4b676e045d16fa2965dbc4b4ba2",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-11"
     }
   ],
   "snapshot": "2026-11-11-sandworm-cyber-arsenal",
   "collection": {
     "name": "sandworm-cyber-arsenal",
     "hub": "https://github.com/Sandworm-Lazarus/sandworm-arsenal",
-    "source_snapshot": "2026-11-11-ai-toolbox"
+    "source_snapshot": "2026-11-11-mcp-typescript-privacy"
   }
 }

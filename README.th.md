@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Cyber Arsenal" width="100%"></p>
 
-<p align="center"><b>68 skill entries · 17 tools · 32 source repositories</b></p>
+<p align="center"><b>68 skill entries · 19 tools · 34 source repositories</b></p>
 
 # Sandworm Cyber Arsenal
 
@@ -8,7 +8,7 @@
 
 [English](README.md) · [Skills](CATALOG.md) · [Tools](TOOLS.md) · [Start here](docs/start-here.md) · [Sources](SOURCES.md) · [หน้ารวมทุกคลัง](https://github.com/Sandworm-Lazarus/sandworm-arsenal)
 
-คลังนี้มีสกิล 68 entries และเครื่องมือ 17 ตัว พร้อมลิงก์ที่ตรึง commit และคำอธิบายการใช้งาน อ่าน [เส้นทางเริ่มต้น](docs/start-here.md) เพื่อเลือกตามโจทย์
+คลังนี้มีสกิล 68 entries และเครื่องมือ 19 ตัว พร้อมลิงก์ที่ตรึง commit และคำอธิบายการใช้งาน อ่าน [เส้นทางเริ่มต้น](docs/start-here.md) เพื่อเลือกตามโจทย์
 
 ## ค้นหาและตรวจข้อมูล
 

@@ -2,7 +2,7 @@
 
 [Home](README.md) · [Skill catalog](CATALOG.md) · [Reuse notes](docs/attribution.md)
 
-Snapshot: **2026-11-11**. The 32 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
+Snapshot: **2026-11-11**. The 34 sources include skill collections, tools and frameworks. License descriptions apply to the inspected snapshot and scope; follow the linked texts before reuse.
 
 Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 
@@ -40,6 +40,8 @@ Generated from `catalog/arsenal.json` with `python3 scripts/arsenal.py render`.
 | [github/codeql](https://github.com/github/codeql) · [ccc03491](https://github.com/github/codeql/tree/ccc03491fc436578bfeecb7e75305d4d64e02118) | [MIT](https://github.com/github/codeql/blob/ccc03491fc436578bfeecb7e75305d4d64e02118/LICENSE) | MIT ใน repo นี้ครอบคลุม queries/libraries; CLI มีเงื่อนไขแยก |
 | [semgrep/semgrep](https://github.com/semgrep/semgrep) · [06d99934](https://github.com/semgrep/semgrep/tree/06d9993409f6698f78f6956cd39d968e7f4d7b6a) | [LGPL-2.1](https://github.com/semgrep/semgrep/blob/06d9993409f6698f78f6956cd39d968e7f4d7b6a/LICENSE) | Engine, rules และ Pro features ใช้เงื่อนไขต่างกัน; ตรวจ license และ telemetry |
 | [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov) · [c7f1a45f](https://github.com/bridgecrewio/checkov/tree/c7f1a45fac5712d4cbaef22946109e20a41a1cef) | [Apache-2.0](https://github.com/bridgecrewio/checkov/blob/c7f1a45fac5712d4cbaef22946109e20a41a1cef/LICENSE) | ตรวจการเรียก API, external modules และ cloud features ตามโหมด |
+| [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) · [4d3464cb](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | [Apache-2.0 transition; retained MIT contributions; docs CC-BY-4.0](https://github.com/modelcontextprotocol/inspector/blob/4d3464cb3a6dde609d7b5ac24c440b947eb40f23/LICENSE) | เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
+| [data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) · [1d700593](https://github.com/data-privacy-stack/presidio/tree/1d7005932261a4b676e045d16fa2965dbc4b4ba2) | [MIT](https://github.com/data-privacy-stack/presidio/blob/1d7005932261a4b676e045d16fa2965dbc4b4ba2/LICENSE) | ใช้ canonical community repository; ทดสอบข้อมูลภาษาไทยและ false negatives จริง การตรวจอัตโนมัติไม่รับรองว่าพบ PII ครบ |
 
 ## Supporting files read in the initial focused review
 
