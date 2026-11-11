@@ -61,7 +61,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | [reversing-network-protocols](https://github.com/trilwu/secskills/blob/ca53957bcd8e3b83b5d4d190bb3ad008a4f15c84/secskills-core/skills/reversing-network-protocols/SKILL.md) | เทียบ packet capture กับ client เพื่อกู้ framing และ field ของ protocol | entry-reviewed |
 | [analyzing-memory-images](https://github.com/trilwu/secskills/blob/ca53957bcd8e3b83b5d4d190bb3ad008a4f15c84/secskills-defense/skills/analyzing-memory-images/SKILL.md) | วิเคราะห์ RAM dump เพื่อเรียงหลักฐาน process, network และ injection | entry-reviewed |
 
-## Synthetic privacy trial
+## Original privacy guard
 
-Use the original [privacy policy fixtures](../examples/privacy-fixtures.json) to define expected masking behavior in a prototype. Include Thai text, explicit sensitive fields, benign version numbers, already masked values and empty input. These are proposed acceptance criteria; configure your own adapter and recognizers and record observed results before claiming support.
+Run the original [local privacy utility](privacy-guard.md) against the [synthetic policy fixtures](../examples/privacy-fixtures.json). Record its documented field policy, input budgets and masking limits. These cases do not establish general PII-detection coverage or Presidio behavior.
 
