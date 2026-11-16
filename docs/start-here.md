@@ -46,6 +46,7 @@ Select a task, inspect the complete pinned package, then try a bounded synthetic
 | --- | --- | --- |
 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Version, configuration, one task result, failure behavior and data/permission boundaries |
 | [Presidio](https://github.com/data-privacy-stack/presidio/tree/1d7005932261a4b676e045d16fa2965dbc4b4ba2) | ค้นและ de-identify ข้อมูล PII ใน text/images ก่อนนำไปใช้ต่อ | Version, configuration, one task result, failure behavior and data/permission boundaries |
+| [MCP Compressor](https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282) | โหลด schema ของ MCP tool เฉพาะเมื่อจะใช้ และเลือกจำกัดขนาด response แบบเรียกคืนได้ | Version, configuration, one task result, failure behavior and data/permission boundaries |
 
 ## Skill starting points
 

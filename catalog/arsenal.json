@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-11-11",
+  "as_of": "2026-11-16",
   "timezone": "Asia/Bangkok",
-  "scope": "Focused collection: 68 skill entries and 19 tools. Original review levels retained. No upstream runtime testing.",
+  "scope": "Focused collection: 68 skill entries and 20 tools. Original review levels retained. No upstream runtime testing.",
   "sources": [
     {
       "repo": "trailofbits/skills",
@@ -575,6 +575,23 @@
       "category": "Privacy & data handling",
       "note": "ใช้ canonical community repository; ทดสอบข้อมูลภาษาไทยและ false negatives จริง การตรวจอัตโนมัติไม่รับรองว่าพบ PII ครบ",
       "recommendation": "README/license overview; not runtime-tested"
+    },
+    {
+      "repo": "atlassian-labs/mcp-compressor",
+      "url": "https://github.com/atlassian-labs/mcp-compressor",
+      "commit": "53e746d1e24c71328526c5c813559fc0557dd282",
+      "kind": "tool",
+      "archived": false,
+      "fork": false,
+      "license": "Apache-2.0",
+      "license_url": "https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/LICENSE",
+      "license_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "readme_url": "https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/README.md",
+      "readme_blob_sha": "66b5195edc6ea3cc5405e9e10f67b171bc67d6cb",
+      "category": "MCP development",
+      "note": "backend ต้องรองรับ legacy initialize; catalog คงที่ต่อ connection ไม่รองรับ dynamic subscriptions; schema lookup อาจเพิ่ม calls; output cache/raw recall ต้องคงขอบเขตสิทธิ์เดิม ยังไม่ทดสอบ integration",
+      "recommendation": "README/license overview; not runtime-tested",
+      "reviewed_at": "2026-11-16"
     }
   ],
   "skills": [
@@ -2029,6 +2046,18 @@
       "path": "engineering/skills/skill-security-auditor/scripts/skill_security_auditor.py",
       "url": "https://github.com/alirezarezvani/claude-skills/blob/9ca476d8401f8750f92f4a7b31ec68efaa61ab02/engineering/skills/skill-security-auditor/scripts/skill_security_auditor.py",
       "blob_sha": "f3116c11694b6680ed30ef3559855d20506a77c5"
+    },
+    {
+      "repo": "atlassian-labs/mcp-compressor",
+      "path": "python/mcp-compressor/pyproject.toml",
+      "url": "https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/python/mcp-compressor/pyproject.toml",
+      "blob_sha": "71dff0f95682246923af3a3f34779b0dedbcecd8"
+    },
+    {
+      "repo": "atlassian-labs/mcp-compressor",
+      "path": "typescript/package.json",
+      "url": "https://github.com/atlassian-labs/mcp-compressor/blob/53e746d1e24c71328526c5c813559fc0557dd282/typescript/package.json",
+      "blob_sha": "757f201cd9ec5b4cc204b9a535f0cfcffd43f24a"
     }
   ],
   "schema_version": 2,
@@ -2243,12 +2272,24 @@
       "runtime_tested": false,
       "review_level": "readme-overview",
       "reviewed_at": "2026-11-11"
+    },
+    {
+      "repo": "atlassian-labs/mcp-compressor",
+      "name": "MCP Compressor",
+      "group": "MCP development",
+      "purpose": "โหลด schema ของ MCP tool เฉพาะเมื่อจะใช้ และเลือกจำกัดขนาด response แบบเรียกคืนได้",
+      "requires": "MCP client/backend; Python package ต้อง >=3.11,<4 หรือ TypeScript/Rust SDK พร้อม native dependencies ตามแพ็ก",
+      "note": "backend ต้องรองรับ legacy initialize; catalog คงที่ต่อ connection ไม่รองรับ dynamic subscriptions; schema lookup อาจเพิ่ม calls; output cache/raw recall ต้องคงขอบเขตสิทธิ์เดิม ยังไม่ทดสอบ integration",
+      "url": "https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282",
+      "runtime_tested": false,
+      "review_level": "readme-overview",
+      "reviewed_at": "2026-11-16"
     }
   ],
-  "snapshot": "2026-11-11-mcp-typescript-privacy-sandworm-cyber-arsenal",
+  "snapshot": "2026-11-16-context-efficiency-sandworm-cyber-arsenal",
   "collection": {
     "name": "sandworm-cyber-arsenal",
     "hub": "https://github.com/Sandworm-Lazarus/sandworm-arsenal",
-    "source_snapshot": "2026-11-11-mcp-typescript-privacy"
+    "source_snapshot": "2026-11-16-context-efficiency"
   }
 }

@@ -2,15 +2,15 @@
 
 [Home](../README.md) · [Methodology](methodology.md)
 
-Snapshot: **2026-11-11** · `2026-11-11-mcp-typescript-privacy-sandworm-cyber-arsenal`
+Snapshot: **2026-11-16** · `2026-11-16-context-efficiency-sandworm-cyber-arsenal`
 
 | Measure | Count |
 | --- | ---: |
 | Skill entries | 68 |
 | Skill collections | 15 |
-| Companion tools | 19 |
+| Companion tools | 20 |
 | Tool categories | 9 |
-| Source repositories | 34 |
+| Source repositories | 35 |
 | Entry-reviewed | 26 |
 | Entry-overview | 42 |
 | Runtime-tested upstream skills | 0 |

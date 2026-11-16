@@ -4,7 +4,7 @@
 
 These are executable tools and frameworks, counted separately from agent skills. Their README/source overviews were inspected; this repository has not installed or run them. Links point to the recorded revision.
 
-**19 tools and frameworks in 9 groups.** See [start here](docs/start-here.md) for task-oriented selections.
+**20 tools and frameworks in 9 groups.** See [start here](docs/start-here.md) for task-oriented selections.
 
 | Group | Tools |
 | --- | ---: |
@@ -15,7 +15,7 @@ These are executable tools and frameworks, counted separately from agent skills.
 | [Supply chain](#supply-chain) | 4 |
 | [CI security](#ci-security) | 1 |
 | [Code analysis](#code-analysis) | 2 |
-| [MCP development](#mcp-development) | 1 |
+| [MCP development](#mcp-development) | 2 |
 | [Privacy & data handling](#privacy-data-handling) | 1 |
 
 <a id="skill-review"></a>
@@ -91,6 +91,7 @@ These are executable tools and frameworks, counted separately from agent skills.
 | Tool | ใช้ทำอะไร | ต้องมี / ข้อจำกัด |
 | --- | --- | --- |
 | [MCP Inspector](https://github.com/modelcontextprotocol/inspector/tree/4d3464cb3a6dde609d7b5ac24c440b947eb40f23) | ตรวจและเรียก MCP servers ผ่าน web, CLI หรือ terminal interface | Node runtime ตาม engine ของ revision, MCP server/config และ connection credentials. เครื่องมืออาจเก็บ OAuth/env secrets; ตรวจ keychain หรือ encrypted storage เมื่อใช้ headless/VPS |
+| [MCP Compressor](https://github.com/atlassian-labs/mcp-compressor/tree/53e746d1e24c71328526c5c813559fc0557dd282) | โหลด schema ของ MCP tool เฉพาะเมื่อจะใช้ และเลือกจำกัดขนาด response แบบเรียกคืนได้ | MCP client/backend; Python package ต้อง >=3.11,<4 หรือ TypeScript/Rust SDK พร้อม native dependencies ตามแพ็ก. backend ต้องรองรับ legacy initialize; catalog คงที่ต่อ connection ไม่รองรับ dynamic subscriptions; schema lookup อาจเพิ่ม calls; output cache/raw recall ต้องคงขอบเขตสิทธิ์เดิม ยังไม่ทดสอบ integration |
 
 <a id="privacy-data-handling"></a>
 

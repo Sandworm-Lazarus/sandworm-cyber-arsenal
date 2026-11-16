@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/banner.svg" alt="Sandworm Cyber Arsenal" width="100%"></p>
 
-<p align="center"><b>68 skill entries · 19 tools · 34 source repositories</b></p>
+<p align="center"><b>68 skill entries · 20 tools · 35 source repositories</b></p>
 
 # Sandworm Cyber Arsenal
 
@@ -36,7 +36,7 @@ python3 -m unittest discover -s tests -v
 | Supply chain | 4 |
 | CI security | 1 |
 | Code analysis | 2 |
-| MCP development | 1 |
+| MCP development | 2 |
 | Privacy & data handling | 1 |
 
 ## Use the collection
